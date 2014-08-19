@@ -1,0 +1,23 @@
+{
+  "name": "synchrony",
+  "version": "0.1.0",
+  "authors": [
+    "Dane O'Connor <dane.oconnor@gmail.com>"
+  ],
+  "description": "Realtime visualization proof-of-concept",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "spec"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "d3": "~3.4.11",
+    "underscore": "~1.6.0",
+    "backbone": "~1.1.2"
+  }
+}

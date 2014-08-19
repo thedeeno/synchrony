@@ -1,0 +1,10 @@
+.employee rect {
+  fill: #aaaaaa;
+}
+.employee.carrying rect {
+  fill: #000000;
+}
+
+svg {
+  padding: 1em;
+}
