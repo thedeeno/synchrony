@@ -8,6 +8,10 @@ In this simple demo, employees are tasked with organizing containers distributed
 
 ## See it in action
 
+**Play:** [synchrony.webm](https://raw.githubusercontent.com/thedeeno/synchrony/master/synchrony.webm)
+
+**Run:**
+
 Requires:
 
 * ruby >= 2.1.0
