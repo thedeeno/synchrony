@@ -10,7 +10,7 @@ In this simple demo, employees are tasked with organizing containers distributed
 
 **Play:** [synchrony.webm](https://raw.githubusercontent.com/thedeeno/synchrony/master/synchrony.webm)
 
-**Run:**
+## Run it yourself
 
 Requires:
 
@@ -38,5 +38,5 @@ bundle exec cucumber
 
 This sinatra app combines 2 micro applications (`/api` and `/monitor`) with a faye messaging application (mounted at `/faye`). The **monitor** subscribes to events published by the **api**. 
 
-The cucumber integration in `features` is the primrary way to see this app in action. 
+The cucumber integration in `features` is the primary way to see this app in action. 
 
