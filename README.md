@@ -2,15 +2,15 @@
 
 A proof-of-concept for visualizing manufacturing systems in realtime.
 
-After an admin sets up the production floor, managers can open the `/monitor` app and watch employees perform tasks.
+In this demo, employees are tasked with organizing containers distributed across the production floor into ordered lines. While the employees do this events are sent to a 'graph' visible in the browser so a manager can watch them perform tasks in realtime.
 
-In this simple demo, employees are tasked with organizing containers distributed across the production floor into ordered lines. The integration test suite hits a backened api while the manager watches his graph. You can imagine the employees using mobile devices which trigger events on the server that ultimatley are visualized for the manager on his/her graph.
+The integration test suite simulates a simple production flow. A manager opens the monitoring app, an administrator sets up the production floor, and employees perform tasks. The tests interact with the system just like it were an actual production system - all the actions are behind an out-of-process api. It would be trivial, for example, to replace the 'employee' agent with a mobile application that hits the same end point
 
 ## See it in action
 
-**Play:** [synchrony.webm](https://raw.githubusercontent.com/thedeeno/synchrony/master/synchrony.webm)
+**Play the video:** [synchrony.webm](https://raw.githubusercontent.com/thedeeno/synchrony/master/synchrony.webm)
 
-## Run it yourself
+## Or run it yourself
 
 Requires:
 
@@ -36,7 +36,7 @@ bundle exec cucumber
 
 ## Details
 
-This sinatra app combines 2 micro applications (`/api` and `/monitor`) with a faye messaging application (mounted at `/faye`). The **monitor** subscribes to events published by the **api**. 
+This sinatra app leverages 2 micro applications (`/api` and `/monitor`) and a faye messaging application (mounted at `/faye`) in a single rack instance. The **monitor** subscribes to events published by the **api** via messages sent by **faye**. 
 
-The cucumber integration in `features` is the primary way to see this app in action. 
+The cucumber integration tests in `features` are the primary way to see this app in action.
 
