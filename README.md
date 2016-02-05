@@ -8,7 +8,7 @@ The integration test suite simulates a simple production flow: A manager opens t
 
 ## See it in action
 
-**Play the video:** [synchrony.webm](https://raw.githubusercontent.com/thedeeno/synchrony/master/synchrony.webm)
+**Play the video:** [synchrony.webm](https://raw.githubusercontent.com/thedeeno/synchrony/master/synchrony.webm) (right click, save as...)
 
 ## Or run it yourself
 
